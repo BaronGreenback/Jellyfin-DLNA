@@ -199,7 +199,7 @@ namespace Jellyfin.Plugin.Dlna.Helpers
 
             if (!string.IsNullOrWhiteSpace(deviceProfileId))
             {
-                state.DeviceProfile = profileManager.GetProfile(Guid.Parse(deviceProfileId), true);
+                state.DeviceProfile = profileManager.GetProfile(Guid.Parse(deviceProfileId));
 
                 if (state.DeviceProfile == null)
                 {
